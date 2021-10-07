@@ -1,3 +1,3 @@
 # Learn-git
-## just learn git and github
+## Just learn git and github
 
