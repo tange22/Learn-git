@@ -1,0 +1,83 @@
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.parent header {
+    color: rgb(60, 191, 231);
+    font-weight: bold;
+}
+
+.parent div {
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    font-size: 20px
+}
+
+/* Mobile For Small Scereen */
+
+@media (max-width: 712px) {
+    .parent div {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px;
+
+
+    }
+
+    .parent header {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+
+/* Mobile for Mediom Secreen */
+
+@media (min-width: 713px) {
+    .parent .one {
+        width: calc(100% - 10px);
+    }
+
+    .parent div {
+        width: calc((100% - 10px) /3);
+        text-align: center;
+        padding: 0px 0px;
+
+
+    }
+
+    .parent header {
+        color: red;
+        font-weight: bold;
+
+    }
+    
+}
+
+/* For large Scereen  */
+
+@media (min-width: 1024px) {
+    .parent .one  , .parent .four{
+        width: calc(100% - 35px);
+    }
+
+
+
+    .parent div {
+        width: calc((100% - 50px) /2);
+        text-align: center;
+        padding: 0px 0px;
+
+
+    }
+
+    .parent header {
+        color: rgb(32, 220, 226);
+        font-weight: bold;
+
+    }
+    
+}
